@@ -32,7 +32,7 @@ Well_ID= Well_Name+"_"+Date
 #    pass            
                  
 H=[]
-H=Dataframe(H)
+H=pd.dataframe(H)
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   for i in range (1,48):           
