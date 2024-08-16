@@ -34,6 +34,7 @@ H=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   H=conn.read(worksheet=Well_ID+"_"+str(3)) 
+  st.write(H)
             
             
   
