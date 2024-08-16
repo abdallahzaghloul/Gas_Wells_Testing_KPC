@@ -15,13 +15,14 @@ st.markdown(" <center>  <h1> Well Testing Follow UP </h1> </font> </center> </h1
 from datetime import time
 
 col1, col2, col3 = st.columns(3)
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+
   
 
 with col1:
  if st.button('Show Results'):
   for i in range (1,48):           
    try:
+    conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
     st.write(conn.read(worksheet=Well_ID+"_"+str(i)) )            
    except:
     pass        
