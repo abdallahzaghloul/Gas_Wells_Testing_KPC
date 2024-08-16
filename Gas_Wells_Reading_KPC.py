@@ -24,7 +24,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
  if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
-  for i inrange (1,48):            
+  for i in range (1,48):            
    st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_Name+str(i)) )            
    
             
