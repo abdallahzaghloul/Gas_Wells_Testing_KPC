@@ -31,7 +31,7 @@ Well_ID= Well_Name+"_"+Date
 #   except:
 #    pass            
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-dfnconn.read(worksheet="Sheet1")
+dfn=conn.read(worksheet="Sheet1")
 n=dfn['Reading_No']
 H="R_"
 L=[]
