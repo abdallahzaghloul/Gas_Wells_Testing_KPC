@@ -31,12 +31,9 @@ Well_ID= Well_Name+"_"+Date
 #   except:
 #    pass            
                  
-H=[]
-H=pd.dataframe(H)
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
-  for i in range (1,48):           
-   H=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+str(i)) )
+   H=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+str(3)) )
             
             
   
