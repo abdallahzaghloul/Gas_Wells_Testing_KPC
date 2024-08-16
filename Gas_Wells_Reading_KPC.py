@@ -18,8 +18,8 @@ col1, col2, col3 = st.columns(3)
 worksheet="BARAKAT-D01X_16-08-2024_5"
 with col1:
  if st.button('Show Results'):
-  conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
-  st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet) )            
+  conn_conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
+  st.write(conn_conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet) )            
   
             
  
