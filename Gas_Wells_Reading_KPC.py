@@ -30,11 +30,11 @@ with col1:
   for i in range (1,48):
    ii=str(i)           
    try:
-    df+"_"+ii=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=1500 )
+    df=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=1500 )
    except:
     pass            
                  
-
+st.write(df)
 
             
   
