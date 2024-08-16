@@ -33,6 +33,7 @@ Well_ID= Well_Name+"_"+Date
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 dfn=conn.read(worksheet="Sheet1")
 n=dfn['Reading_No']
+n=st.write(n)
 H="R_"
 L=[]
 if st.button('Show Results'):
