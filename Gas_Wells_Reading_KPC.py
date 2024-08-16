@@ -23,18 +23,24 @@ Date=Date.strftime('%d-%m-%Y')
 Well_ID= Well_Name+"_"+Date
 
 
+Data=[]
+
 with col1:
  if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
-  for i in range (1,48):            
-   st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+"5") )            
-   
+  try:           
+   for i in range (1,48):
+    Data.appendconn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+i) )           
+    st.write(Data)            
+  except:
+   pass
+              
             
- 
- 
   
-
-
+  
+   
  
-
-
+ 
+ 
+ 
+ 
