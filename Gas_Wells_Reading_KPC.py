@@ -11,11 +11,15 @@ image= np.array(im)
 st.image(image)
 st.markdown(" <center>  <h1> Well Testing Follow UP </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
+Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BARAKAT-D02X','BARAKAT-D06X','FUSTAT-N01X','IO-01X','BAT-10X','NUT-01X','SHAI-01X','ATOUN-N01X','APRIES-E01X','APRIES-E03X','ANTI-01X'))
 
 from datetime import time
 
 col1, col2, col3 = st.columns(3)
-worksheet="BARAKAT-D01X_16-08-2024_5"
+for i in range(1,48):
+ worksheet[i]=Well_Name+"_"+str(i)
+
+st.write(worksheet)
 with col1:
  if st.button('Show Results'):
   conn_conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
