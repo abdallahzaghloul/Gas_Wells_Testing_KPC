@@ -16,8 +16,9 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 col1, col2, col3 = st.columns(3)
+worksheet=[]
 for i in range(1,48):
- worksheet[i]=Well_Name+"_"+str(i)
+ worksheet.append(Well_Name+"_"+str(i))
 
 st.write(worksheet)
 with col1:
