@@ -37,7 +37,7 @@ if st.button('Show Results'):
   for i in range(1,48):           
    L=H+str(i)
    L=conn.read(worksheet=Well_ID+"_"+str(i)) 
-   st.write(H+"i")
+   st.write(L)
             
             
   
