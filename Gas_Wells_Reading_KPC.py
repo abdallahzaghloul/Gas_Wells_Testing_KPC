@@ -41,7 +41,7 @@ if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   for i in range(1,n):           
    L=H+str(i)
-   L=conn.read(worksheet=Well_ID+"_"+str(i)) 
+   L=conn.read(worksheet=Well_ID+"_"+i) 
    st.write(L)
             
             
