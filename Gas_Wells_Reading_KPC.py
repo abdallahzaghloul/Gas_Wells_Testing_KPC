@@ -33,7 +33,7 @@ Well_ID= Well_Name+"_"+Date
 H=[]                 
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
-   H=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+str(3)) )
+   H=(conn.read(worksheet=Well_ID+"_"+str(3)) )
             
             
   
