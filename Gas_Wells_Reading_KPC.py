@@ -16,10 +16,10 @@ Well_Name = st.selectbox('The Well Name for current Testing',('BARAKAT-D01X','BA
 from datetime import time
 
 col1, col2, col3 = st.columns(3)
-
-Well_ID= Well_Name+"_"+Date
 Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
+
+Well_ID= Well_Name+"_"+Date
 
 
 with col1:
@@ -27,7 +27,7 @@ with col1:
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
   try:           
    for i in range (1,48):
-    st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+str(i)) )             
+    st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_5") )             
   except:
    pass
               
