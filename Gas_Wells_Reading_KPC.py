@@ -31,7 +31,7 @@ Well_ID= Well_Name+"_"+Date
 #   except:
 #    pass            
                  
-
+H=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   for i in range (1,48):           
