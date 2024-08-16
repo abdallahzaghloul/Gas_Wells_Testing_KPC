@@ -30,7 +30,7 @@ with col1:
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
   try:           
    for i in range (1,48):
-    st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+i) )             
+    st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+str(i)) )             
   except:
    pass
               
