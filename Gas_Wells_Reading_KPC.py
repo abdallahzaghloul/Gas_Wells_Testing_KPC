@@ -33,7 +33,7 @@ with col1:
     Data.append(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+i) )           
     st.write(Data)            
   except:
-   pass
+   i+1
               
             
   
