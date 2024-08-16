@@ -24,13 +24,14 @@ Well_ID= Well_Name+"_"+Date
 ii=""
 Data = []
 df = pd.DataFrame(Data)
+h=[]
 with col1:
  if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   for i in range (1,48):
    ii=str(i)           
    try:
-    h=(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=1500 )
+    h.append(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=1500 )
    except:
     pass            
                  
