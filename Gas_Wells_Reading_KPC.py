@@ -19,12 +19,12 @@ col1, col2, col3 = st.columns(3)
 worksheet=[]
 for i in range(1,48):
  worksheet.append(Well_Name+"_"+str(i))
-workheet[5]
+
 st.write(worksheet)
 with col1:
  if st.button('Show Results'):
-  conn_conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
-  st.write(conn_conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet) )            
+  conn = st.experimental_connection("gsheets", type=GSheetsConnection)           
+  st.write(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=worksheet) )            
   
             
  
