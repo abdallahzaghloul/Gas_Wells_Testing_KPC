@@ -35,7 +35,8 @@ Well_ID= Well_Name+"_"+Date
 #n=dfn['Reading_No'].loc[0]
 
 
-
+worksheet=Well_ID+"_5"
+sparesheet= "https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"
 
 
 #n=int(n)
