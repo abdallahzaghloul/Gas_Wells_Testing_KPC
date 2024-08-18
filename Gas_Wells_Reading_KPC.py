@@ -31,7 +31,7 @@ Well_ID= Well_Name+"_"+Date
 #   except:
 #    pass            
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-dfn=conn.read(worksheet="Sheet1")
+dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
 n=dfn['Reading_No'].loc[0]
 
 
