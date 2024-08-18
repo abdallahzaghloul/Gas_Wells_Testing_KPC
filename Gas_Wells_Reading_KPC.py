@@ -30,21 +30,19 @@ Well_ID= Well_Name+"_"+Date
 #    st.dataframe(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=200 )
 #   except:
 #    pass            
-#conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-#dfn=conn.read(worksheet="Sheet1")
-#n=dfn['Reading_No'].loc[0]
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+dfn=conn.read(worksheet="Sheet1")
+n=dfn['Reading_No'].loc[0]
 
 
-worksheet=Well_ID+"_5"
-sparesheet= "https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw"
 
 
-#n=int(n)
+n=int(n)
 H="R_"
 L=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
-  for i in range(1,48):           
+  for i in range(1,n):           
    L=H+str(i)
    ii=str(i)           
    L=conn.read(worksheet=Well_ID+"_"+ii) 
