@@ -35,7 +35,7 @@ dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcY
 n=dfn['Reading_No'].loc[0]
 
 
-
+st.write(n)
 
 n=int(n)
 H="R_"
