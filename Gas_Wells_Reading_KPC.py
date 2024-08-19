@@ -91,7 +91,6 @@ if st.button('Show Results'):
    R["GOR"]=R11           
    R["API"]=R12           
    R["BS&W"]=R13           
-   st.write(L)         
   st.write(R)     
  
  
