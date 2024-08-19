@@ -78,19 +78,19 @@ if st.button('Show Results'):
    R11=pd.DataFrame(Registeration_Time,columns= ["GOR"])
    R12=pd.DataFrame(Registeration_Time,columns= ["API"])
    R13=pd.DataFrame(Registeration_Time,columns= ["BS&W"])
-   R["Registeration_Time"]=R1           
+   R["Date"]=R1           
    R["Registeration_Time"]=R2           
-   R["Registeration_Time"]=R3           
-   R["Registeration_Time"]=R4           
-   R["Registeration_Time"]=R5           
-   R["Registeration_Time"]=R6           
-   R["Registeration_Time"]=R7           
-   R["Registeration_Time"]=R8           
-   R["Registeration_Time"]=R9           
-   R["Registeration_Time"]=R10           
-   R["Registeration_Time"]=R11           
-   R["Registeration_Time"]=R12           
-   R["Registeration_Time"]=R13           
+   R["WHP"]=R3           
+   R["SEP_Pressure"]=R4           
+   R["SEP_Temperature"]=R5           
+   R["FLP"]=R6           
+   R["FLT"]=R7           
+   R["Gas_Rate"]=R8           
+   R["Water"]=R9           
+   R["Condensate"]=R10           
+   R["GOR"]=R11           
+   R["API"]=R12           
+   R["BS&W"]=R13           
    st.write(L)         
   st.write(R)     
  
