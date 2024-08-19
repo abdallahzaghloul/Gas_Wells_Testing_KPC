@@ -64,7 +64,8 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])           
-   B=st.dataframe(CK)           
+   B=st.dataframe(CK)
+   B.iloc[2]           
    st.write(Reading_No)           
    st.write(Registeration_Time)           
    st.write(Date)           
