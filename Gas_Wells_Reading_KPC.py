@@ -82,7 +82,7 @@ if st.button('Update Data'):
 
 if st.button("Show Results"):
  L0=pd.DataFrame(CK)            
- st.dataframe(CK)    
+ st.dataframe(L0)    
  
  
  
