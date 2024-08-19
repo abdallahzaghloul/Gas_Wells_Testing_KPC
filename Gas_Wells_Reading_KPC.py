@@ -63,8 +63,9 @@ if st.button('Show Results'):
    Condensate.append(L['Condensate'].loc[0])           
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
-   BSW.append(L['BS&W'].loc[0])           
-  st.write(L)           
+   BSW.append(L['BS&W'].loc[0])
+   B=pd.DataFrame(CK)           
+   st.write(L)           
     
  
  
