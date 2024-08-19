@@ -43,7 +43,10 @@ L=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)
   dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
-  n=dfn['Reading_No'].loc[0]          
+  n=dfn['Reading_No'].loc[0]  
+  n=int(n)
+  H="R_"
+  L=[]          
   for i in range(1,n):           
    L=H+str(i)
    ii=str(i)           
