@@ -80,7 +80,7 @@ if st.button('Update Data'):
 #   st.write(L)           
 
 
-if st.button("Show Results")
+if st.button("Show Results"):
  CK=pd.DataFrame(CK,columns="C.K %")            
  st.dataframe(CK)    
  
