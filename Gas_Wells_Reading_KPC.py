@@ -66,23 +66,31 @@ if st.button('Show Results'):
    BSW.append(L['BS&W'].loc[0])
    R=pd.DataFrame(CK,columns= ["C.K %"])           
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])           
+   R2=pd.DataFrame(Registeration_Time,columns= ["Date"])
+   R3=pd.DataFrame(Registeration_Time,columns= ["WHP"])
+   R4=pd.DataFrame(Registeration_Time,columns= ["SEP_Pressure"])
+   R5=pd.DataFrame(Registeration_Time,columns= ["SEP_Temperature"])
+   R6=pd.DataFrame(Registeration_Time,columns= ["FLP"])
+   R7=pd.DataFrame(Registeration_Time,columns= ["FLT"])
+   R8=pd.DataFrame(Registeration_Time,columns= ["Gas_Rate"])
+   R9=pd.DataFrame(Registeration_Time,columns= ["Water"])
+   R10=pd.DataFrame(Registeration_Time,columns= ["Condensate"])
+   R11=pd.DataFrame(Registeration_Time,columns= ["GOR"])
+   R12=pd.DataFrame(Registeration_Time,columns= ["API"])
+   R13=pd.DataFrame(Registeration_Time,columns= ["BS&W"])
    R["Registeration_Time"]=R1           
+   R["Registeration_Time"]=R2           
+   R["Registeration_Time"]=R3           
+   R["Registeration_Time"]=R4           
+   R["Registeration_Time"]=R5           
+   R["Registeration_Time"]=R6           
+   R["Registeration_Time"]=R7           
+   R["Registeration_Time"]=R8           
+   R["Registeration_Time"]=R9           
+   R["Registeration_Time"]=R10           
+   R["Registeration_Time"]=R11           
+   R["Registeration_Time"]=R12           
+   R["Registeration_Time"]=R13           
    st.write(L)         
   st.write(R)     
  
