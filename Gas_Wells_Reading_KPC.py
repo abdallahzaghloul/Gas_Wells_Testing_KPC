@@ -66,7 +66,7 @@ if st.button('Show Results'):
    BSW.append(L['BS&W'].loc[0])
    CK_n=pd.DataFrame(CK,columns= ["C.K %"])           
    st.write(L)         
-  st.write(B)     
+  st.write(CK_n)     
  
  
  
