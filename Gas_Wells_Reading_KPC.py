@@ -64,11 +64,10 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
-   L0=pd.DataFrame(CK,columns= ["C.K %"])           
-   L1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])           
+   R=pd.DataFrame(CK,columns= ["C.K %"])           
+   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
+   R["Registeration_Time"]=R1           
    st.write(L)         
-  st.write(L0)     
-  st.write(L1)     
- 
+  st.write(R)     
  
  
