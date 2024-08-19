@@ -21,7 +21,7 @@ Date=Date.strftime('%d-%m-%Y')
 
 Well_ID= Well_Name+"_"+Date
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",ttl="1")
+dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",ttl="1d")
 n=dfn['Reading_No'].loc[0]  
 n=int(n)
  
@@ -53,7 +53,7 @@ if st.button('Show Results'):
   for i in range(1,n+1):           
    L=H+str(i)
    ii=str(i)           
-   L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1")
+   L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1d")
    CK.append(L['C.K%'].loc[0])
    Reading_No.append(L['Reading_No'].loc[0])
    Registeration_Time.append(L['Registeration_Time'].loc[0])
