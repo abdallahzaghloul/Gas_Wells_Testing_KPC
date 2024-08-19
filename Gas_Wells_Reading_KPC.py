@@ -45,7 +45,7 @@ n=int(n)
 H="R_"
 L=[]
 if st.button('Show Results'):
-  conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
+#  conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
   for i in range(1,n):           
    L=H+str(i)
    ii=str(i)           
