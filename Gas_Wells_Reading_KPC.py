@@ -20,7 +20,7 @@ Date=datetime.date.today()
 Date=Date.strftime('%d-%m-%Y')
 
 Well_ID= Well_Name+"_"+Date
-
+L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_1")
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
 n=dfn['Reading_No'].loc[0]  
