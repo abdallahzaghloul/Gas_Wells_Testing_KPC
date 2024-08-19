@@ -44,6 +44,9 @@ Condensate=[]
 GOR=[]
 API=[]
 BSW=[]
+CO2=[]
+H2S=[]
+SAL=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n+1):           
@@ -64,6 +67,10 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
+   CO2.append(L['CO2 %'].loc[0])
+   H2S.append(L['H2S'].loc[0])
+   SAL.append(L['SAL'].loc[0])
+              
    R=pd.DataFrame(Registeration_Time,columns= ["Date"])
    R1=pd.DataFrame(CK,columns= ["C.K %"])           
    R2=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
@@ -96,5 +103,7 @@ if st.button('Show Results'):
    R["BS&W"]=R["BS&W"].astype('str')+" %"           
    R["C.K %"]=R["C.K %"].astype('str')+" %"            
   st.write(R)     
- 
+  st.write("CO2 %  = ",CO2)
+  st.write("H2S PPM  = ",H2S)
+  st.write("SAL KPPM  = ",SAL) 
  
