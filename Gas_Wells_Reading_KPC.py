@@ -64,7 +64,9 @@ if st.button('Update Data'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])           
-   st.dataframe(CK)          
+   st.dataframe(CK)
+   L0=pd.DataFrame(CK)
+   st.write(L0)           
 #   st.write(Reading_No)           
 #   st.write(Registeration_Time)           
 #   st.write(Date)           
@@ -78,7 +80,7 @@ if st.button('Update Data'):
 #   st.write(GOR)           
 #   st.write(BSW)           
 #   st.write(L)           
-   L0=pd.DataFrame(CK)            
+               
     
  
  
