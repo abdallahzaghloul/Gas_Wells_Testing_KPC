@@ -90,7 +90,8 @@ if st.button('Show Results'):
    R["Condensate"]=R10           
    R["GOR"]=R11           
    R["API"]=R12           
-   R["BS&W"]=R13           
+   R["BS&W"]=R13
+   R["BS&W"]=R["BS&W"].astype('float')*100           
   st.write(R)     
  
  
