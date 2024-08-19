@@ -64,9 +64,9 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
-   R1=pd.DataFrame(CK,columns= ["C.K %"])           
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R=pd.DataFrame(Registeration_Time,columns= ["Date"])
+   R1=pd.DataFrame(CK,columns= ["C.K %"])           
+   R2=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R3=pd.DataFrame(Registeration_Time,columns= ["WHP"])
    R4=pd.DataFrame(Registeration_Time,columns= ["SEP_Pressure"])
    R5=pd.DataFrame(Registeration_Time,columns= ["SEP_Temperature"])
@@ -78,7 +78,7 @@ if st.button('Show Results'):
    R11=pd.DataFrame(Registeration_Time,columns= ["GOR"])
    R12=pd.DataFrame(Registeration_Time,columns= ["API"])
    R13=pd.DataFrame(Registeration_Time,columns= ["BS&W"])
-   R["Date"]=R1           
+   R["C.K %"]=R1           
    R["Registeration_Time"]=R2           
    R["WHP"]=R3           
    R["SEP_Pressure"]=R4           
