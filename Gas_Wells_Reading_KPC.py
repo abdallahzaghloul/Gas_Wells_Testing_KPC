@@ -30,6 +30,20 @@ H="R_"
 L=[]
 st.write(n)
 CK=[]
+Reading_No=[]
+Registeration_Time=[]
+Date=[]
+WHP=[]
+SEP_Pressure=[]
+SEP_Temperature=[]
+FLP=[]
+FLT=[]
+Gas_Rate=[]
+Water=[]
+Condensate=[]
+GOR=[]
+API=[]
+BSW=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n+1):           
@@ -37,6 +51,19 @@ if st.button('Show Results'):
    ii=str(i)           
    L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1")
    CK.append(L['C.K%'].loc[0])
+   Reading_No.append(L['Reading_No'].loc[0])
+   Registeration_Time.append(L['Registeration_Time'].loc[0])
+   Date.append(L['Date'].loc[0])
+   WHP.append(L['WHP'].loc[0])
+   SEP_Pressure.append(L['SEP_Pressure'].loc[0])
+   SEP_Temperature.append(L['SEP_Temperature'].loc[0]) 
+   FLP.append(L['FLP'].loc[0])
+   FLT.append(L['FLT'].loc[0])
+   Gas_Rate.append(L['Gas_Rate'].loc[0])
+   Condensate.append(L['Condensate'].loc[0])           
+   Water.append(L['Water'].loc[0])           
+   GOR.append(L['GOR'].loc[0])           
+   BSW.append(L['BS&W'].loc[0])           
    st.write(CK)           
    st.write(L)
             
