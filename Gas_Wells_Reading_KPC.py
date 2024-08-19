@@ -47,6 +47,7 @@ BSW=[]
 CO2=[]
 H2S=[]
 SAL=[]
+Remarks=[]
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n+1):           
@@ -70,6 +71,7 @@ if st.button('Show Results'):
    CO2.append(L['CO2 %'].loc[0])
    H2S.append(L['H2S'].loc[0])
    SAL.append(L['SAL'].loc[0])
+   Remarks.append(L['Remarks'].loc[0])
               
    R=pd.DataFrame(Registeration_Time,columns= ["Date"])
    R1=pd.DataFrame(CK,columns= ["C.K %"])           
@@ -113,5 +115,6 @@ if st.button('Show Results'):
    IMP["CO2 %"]=IMP["CO2 %"].astype('str')+" %"            
   st.write(R)     
   st.write(IMP)     
+  st.write(Remarks)     
   
  
