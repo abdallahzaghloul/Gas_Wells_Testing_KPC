@@ -68,6 +68,7 @@ if st.button('Show Results'):
    L1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])           
    st.write(L)         
   st.write(L0)     
+  st.write(L1)     
  
  
  
