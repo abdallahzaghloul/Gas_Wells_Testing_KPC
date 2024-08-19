@@ -34,7 +34,8 @@ if st.button('Show Results'):
   for i in range(1,n+1):           
    L=H+str(i)
    ii=str(i)           
-   L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1") 
+   L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1")
+              
    st.write(L)
             
             
