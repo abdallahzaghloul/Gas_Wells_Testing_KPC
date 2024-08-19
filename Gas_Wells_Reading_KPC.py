@@ -81,7 +81,7 @@ if st.button('Update Data'):
 
 
 if st.button("Show Results"):
- CK=pd.DataFrame(CK,columns="C.K %")            
+ L0=pd.DataFrame(CK)            
  st.dataframe(CK)    
  
  
