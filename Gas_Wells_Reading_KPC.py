@@ -109,6 +109,8 @@ if st.button('Show Results'):
    R["C.K %"]=R["C.K %"].astype('float')*100            
    R["BS&W"]=R["BS&W"].astype('str')+" %"           
    R["C.K %"]=R["C.K %"].astype('str')+" %"            
+   IMP["CO2 %"]=IMP["CO2 %"].astype('float')*100            
+   IMP["CO2 %"]=IMP["CO2 %"].astype('str')+" %"            
   st.write(R)     
   st.write(IMP)     
   
