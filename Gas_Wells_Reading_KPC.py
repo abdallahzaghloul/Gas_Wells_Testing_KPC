@@ -44,7 +44,7 @@ Condensate=[]
 GOR=[]
 API=[]
 BSW=[]
-if st.button('Update Data'):
+if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n+1):           
    L=H+str(i)
