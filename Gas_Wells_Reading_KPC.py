@@ -88,7 +88,7 @@ if st.button('Show Results'):
               
    IMP=pd.DataFrame(H2S,columns= ["H2S"])
    IMP1=pd.DataFrame(SAL,columns= ["SAL"])
-   IMP2=pd.DataFrame(CO@,columns= ["CO2 %"])          
+   IMP2=pd.DataFrame(CO2,columns= ["CO2 %"])          
    IMP["SAL KPPM"]=IMP1
    IMP["CO2 %"]=IMP2
               
