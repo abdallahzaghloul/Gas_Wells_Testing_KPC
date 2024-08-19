@@ -78,11 +78,8 @@ if st.button('Update Data'):
 #   st.write(GOR)           
 #   st.write(BSW)           
 #   st.write(L)           
-
-
-if st.button("Show Results"):
- L0=pd.DataFrame(CK)            
- st.dataframe(L0)    
+   L0=pd.DataFrame(CK)            
+    
  
  
  
