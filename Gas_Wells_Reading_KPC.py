@@ -65,8 +65,8 @@ if st.button('Show Results'):
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
    B=pd.DataFrame(CK)           
-   st.write(L)           
- st.write(B)     
+   st.write(L)         
+   st.write(B)     
  
  
  
