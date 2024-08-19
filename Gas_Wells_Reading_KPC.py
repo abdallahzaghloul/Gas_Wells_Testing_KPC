@@ -85,6 +85,13 @@ if st.button('Show Results'):
    R11=pd.DataFrame(GOR,columns= ["GOR"])
    R12=pd.DataFrame(API,columns= ["API"])
    R13=pd.DataFrame(BSW,columns= ["BS&W"])
+              
+   IMP=pd.DataFrame(H2S,columns= ["H2S"])
+   IMP1=pd.DataFrame(SAL,columns= ["SAL"])
+   IMP2=pd.DataFrame(CO@,columns= ["CO2 %"])          
+   IMP["SAL KPPM"]=IMP1
+   IMP["CO2 %"]=IMP2
+              
    R["C.K %"]=R1           
    R["Registeration_Time"]=R2           
    R["WHP"]=R3           
@@ -103,7 +110,6 @@ if st.button('Show Results'):
    R["BS&W"]=R["BS&W"].astype('str')+" %"           
    R["C.K %"]=R["C.K %"].astype('str')+" %"            
   st.write(R)     
-  st.write("CO2 %  = ",CO2)
-  st.write("H2S PPM  = ",H2S)
-  st.write("SAL KPPM  = ",SAL) 
+  st.write(IMP)     
+  
  
