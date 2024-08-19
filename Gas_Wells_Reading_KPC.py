@@ -64,26 +64,23 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])           
-   st.dataframe(CK)          
-   st.write(Reading_No)           
-   st.write(Registeration_Time)           
-   st.write(Date)           
-   st.write(SEP_Pressure)           
-   st.write(SEP_Temperature)           
-   st.write(FLP)           
-   st.write(FLT)           
-   st.write(Gas_Rate)           
-   st.write(Water)           
-   st.write(Condensate)           
-   st.write(GOR)           
-   st.write(API)           
-   st.write(BSW)           
-   st.write(L)           
+#   st.dataframe(CK)          
+#   st.write(Reading_No)           
+#   st.write(Registeration_Time)           
+#   st.write(Date)           
+#   st.write(SEP_Pressure)           
+#   st.write(SEP_Temperature)           
+#   st.write(FLP)           
+#   st.write(FLT)           
+#   st.write(Gas_Rate)           
+#   st.write(Water)           
+#   st.write(Condensate)           
+#   st.write(GOR)           
+#   st.write(BSW)           
+#   st.write(L)           
          
-            
- S=[] 
- df=pd.DataFrame(S) 
-   
+CK=pd.DataFrame(CK,columns="C.K %")            
+st.dataframe(CK)    
  
  
  
