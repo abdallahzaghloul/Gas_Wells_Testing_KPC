@@ -82,7 +82,7 @@ if st.button('Show Results'):
          
             
   
- df=pd.DataFrame([]) 
+ df=pd.DataFrame() 
    
  
  
