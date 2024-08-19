@@ -36,13 +36,12 @@ if st.button('Show Results'):
    L=H+str(i)
    ii=str(i)           
    L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1")
-   CK.append(L['C.K%'].loc[0])
-   st.write(CK)           
+   CK.append(L['C.K%'].loc[0])           
    st.write(L)
             
             
   
-  
+ st.write(CK) 
    
  
  
