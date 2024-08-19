@@ -65,6 +65,7 @@ if st.button('Show Results'):
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
    L0=pd.DataFrame(CK,columns= ["C.K %"])           
+   L1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])           
    st.write(L)         
   st.write(L0)     
  
