@@ -64,7 +64,7 @@ if st.button('Show Results'):
    Water.append(L['Water'].loc[0])           
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])
-   R0=pd.DataFrame(CK,columns= ["C.K %"])           
+   R=pd.DataFrame(CK,columns= ["C.K %"])           
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
@@ -81,8 +81,7 @@ if st.button('Show Results'):
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
    R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])
-   R["C.K %"]=R0           
+   R1=pd.DataFrame(Registeration_Time,columns= ["Registeration_Time"])           
    R["Registeration_Time"]=R1           
    st.write(L)         
   st.write(R)     
