@@ -44,7 +44,7 @@ Condensate=[]
 GOR=[]
 API=[]
 BSW=[]
-if st.button('Show Results'):
+if st.button('Update Data'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n+1):           
    L=H+str(i)
@@ -78,9 +78,11 @@ if st.button('Show Results'):
 #   st.write(GOR)           
 #   st.write(BSW)           
 #   st.write(L)           
-         
-CK=pd.DataFrame(CK,columns="C.K %")            
-st.dataframe(CK)    
+
+
+if st.button("Show Results")
+ CK=pd.DataFrame(CK,columns="C.K %")            
+ st.dataframe(CK)    
  
  
  
