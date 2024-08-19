@@ -66,7 +66,7 @@ if st.button('Show Results'):
    BSW.append(L['BS&W'].loc[0])
    B=pd.DataFrame(CK)           
    st.write(L)           
-    
+ st.write(B)     
  
  
  
