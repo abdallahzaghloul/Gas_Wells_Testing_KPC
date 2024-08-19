@@ -81,8 +81,8 @@ if st.button('Show Results'):
    st.write(L)           
          
             
-  
- df=pd.DataFrame() 
+ data=[] 
+ df=pd.DataFrame(data) 
    
  
  
