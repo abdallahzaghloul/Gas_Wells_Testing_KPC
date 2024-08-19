@@ -21,22 +21,15 @@ Date=Date.strftime('%d-%m-%Y')
 
 Well_ID= Well_Name+"_"+Date
 
-#with col1:
-# if st.button('Show Results'):
-#  conn = st.experimental_connection("gsheets", type=GSheetsConnection)                      
-#  for i in range (1,48):
-#   ii=str(i)           
-#   try:
-#    st.dataframe(conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii),width=1500,height=200 )
-#   except:
-#    pass            
+conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
+n=dfn['Reading_No'].loc[0]  
+n=int(n)
+H="R_"
+L=[]
+st.write(n)
 if st.button('Show Results'):
-  conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-  dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1")
-  n=dfn['Reading_No'].loc[0]  
-  n=int(n)
-  H="R_"
-  L=[]          
+  conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
   for i in range(1,n):           
    L=H+str(i)
    ii=str(i)           
