@@ -31,7 +31,7 @@ L=[]
 st.write(n)
 if st.button('Show Results'):
   conn = st.experimental_connection("gsheets", type=GSheetsConnection)  
-  for i in range(1,n):           
+  for i in range(1,n+1):           
    L=H+str(i)
    ii=str(i)           
    L=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet=Well_ID+"_"+ii,ttl="1") 
