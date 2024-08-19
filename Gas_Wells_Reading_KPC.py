@@ -78,6 +78,7 @@ if st.button('Show Results'):
    st.write(GOR)           
    st.write(API)           
    st.write(BSW)           
+   st.write(L)           
          
             
   
