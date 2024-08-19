@@ -92,6 +92,7 @@ if st.button('Show Results'):
    R["API"]=R12           
    R["BS&W"]=R13
    R["BS&W"]=R["BS&W"].astype('float')*100           
+   R["C.K %"]=R["C.K %"].astype('float')*100            
   st.write(R)     
  
  
