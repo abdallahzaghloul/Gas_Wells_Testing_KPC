@@ -78,7 +78,7 @@ if st.button('Update Data'):
 #   st.write(GOR)           
 #   st.write(BSW)           
 #   st.write(L)           
-   L0=pd.DataFrame(CK,columns="C.K %")            
+   L0=pd.DataFrame(CK)            
     
  
  
