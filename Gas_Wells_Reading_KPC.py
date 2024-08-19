@@ -53,7 +53,7 @@ if st.button('Show Results'):
   
    
  
- n=int(n)
+n=int(n)
 H="R_"
 L=[]
 if st.button('Show Results'):
