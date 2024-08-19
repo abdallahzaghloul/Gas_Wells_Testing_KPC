@@ -65,8 +65,20 @@ if st.button('Show Results'):
    GOR.append(L['GOR'].loc[0])           
    BSW.append(L['BS&W'].loc[0])           
    st.write(CK)           
-   st.write(L)
-            
+   st.write(Reading_No)           
+   st.write(Registeration_Time)           
+   st.write(Date)           
+   st.write(SEP_Pressure)           
+   st.write(SEP_Temperature)           
+   st.write(FLP)           
+   st.write(FLT)           
+   st.write(Gas_Rate)           
+   st.write(Water)           
+   st.write(Condensate)           
+   st.write(GOR)           
+   st.write(API)           
+   st.write(BSW)           
+         
             
   
   
