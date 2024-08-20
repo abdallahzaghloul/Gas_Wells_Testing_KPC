@@ -22,7 +22,7 @@ Date=Date.strftime('%d-%m-%Y')
 Well_ID= Well_Name+"_"+Date
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 
-dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",ttl="1")
+#dfn=conn.read(spreadsheet="https://docs.google.com/spreadsheets/d/1Z0clIbSazOxcYwngdQGK557s-ltIQ-Al_Ja5ypl2fgw",worksheet="Sheet1",ttl="1")
 n=dfn['Reading_No'].loc[0]  
 n=int(n)
  
