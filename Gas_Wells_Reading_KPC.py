@@ -107,14 +107,45 @@ if st.button('Show Results'):
    R["GOR"]=R11           
    R["API"]=R12           
    R["BS&W"]=R13
+   
+   AVG=R["WHP"].mean()           
+   AVG1=R["SEP_Pressure"].mean()           
+   AVG2=R["SEP_Temperature"].mean()           
+   AVG3=R["FLP"].mean()     
+   AVG4=R["FLT"].mean()          
+   AVG5=R["Gas_Rate"].mean()           
+   AVG6=R["Water"].mean()           
+   AVG7=R["Condensate"].mean()           
+   AVG8=R["GOR"].mean()           
+   AVG9=R["API"].mean()           
+   AVG10=R["BS&W"].mean()   
+   AVG["SEP_Pressure"]=AVG1           
+   AVG["SEP_Temperature"]=AVG2           
+   AVG["FLP"]=AVG3           
+   AVG["FLT"]=AVG4          
+   AVG["Gas_Rate"]=AVG5           
+   AVG["Water"]=AVG6           
+   AVG["Condensate"]=AVG7           
+   AVG["GOR"]=AVG8           
+   AVG["API"]=AVG9           
+   AVG["BS&W"]=AVG10
+   
+
+              
    R["BS&W"]=R["BS&W"].astype('float')*100           
    R["C.K %"]=R["C.K %"].astype('float')*100            
    R["BS&W"]=R["BS&W"].astype('str')+" %"           
    R["C.K %"]=R["C.K %"].astype('str')+" %"            
    IMP["CO2 %"]=IMP["CO2 %"].astype('float')*100            
-   IMP["CO2 %"]=IMP["CO2 %"].astype('str')+" %"            
+   IMP["CO2 %"]=IMP["CO2 %"].astype('str')+" %"
+              
+ 
   st.write(R)     
   st.write(IMP)     
-  st.write(Remarks)     
+  st.write(Remarks)
+  st.markdown(" <center>  <h1> Well Testing Average Results` </h1> </font> </center> </h1> ",
+            unsafe_allow_html=True)
+          
+  st.write(AVG)     
   
  
