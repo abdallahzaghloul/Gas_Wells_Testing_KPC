@@ -1,1 +1,6 @@
 
+
+pandas
+
+streamlit==1.37.1
+st-gsheets-connection
