@@ -108,27 +108,27 @@ if st.button('Show Results'):
    R["API"]=R12           
    R["BS&W"]=R13
    
-#   AVG=R["WHP"].astype('float')          
-#   AVG1=R["SEP_Pressure"].astype('float')           
-#   AVG2=R["SEP_Temperature"].astype('float')           
-#   AVG3=R["FLP"].astype('float')
-#   AVG4=R["FLT"].astype('float')          
-#   AVG5=R["Gas_Rate"].astype('float')           
-#   AVG6=R["Water"].astype('float')        
-#   AVG7=R["Condensate"].astype('float')          
-#   AVG8=R["GOR"].astype('float')           
-#   AVG9=R["API"].astype('float')           
-#   AVG10=R["BS&W"].astype('float') 
-#   AVG["SEP_Pressure"]=AVG1           
-#   AVG["SEP_Temperature"]=AVG2           
-#   AVG["FLP"]=AVG3           
-#   AVG["FLT"]=AVG4          
-#   AVG["Gas_Rate"]=AVG5           
-#   AVG["Water"]=AVG6           
-#   AVG["Condensate"]=AVG7           
-#   AVG["GOR"]=AVG8           
-#   AVG["API"]=AVG9           
-#   AVG["BS&W"]=AVG10
+   AVG=R["WHP"].astype('float')          
+   AVG1=R["SEP_Pressure"].astype('float')           
+   AVG2=R["SEP_Temperature"].astype('float')           
+   AVG3=R["FLP"].astype('float')
+   AVG4=R["FLT"].astype('float')          
+   AVG5=R["Gas_Rate"].astype('float')           
+   AVG6=R["Water"].astype('float')        
+   AVG7=R["Condensate"].astype('float')          
+   AVG8=R["GOR"].astype('float')           
+   AVG9=R["API"].astype('float')           
+   AVG10=R["BS&W"].astype('float') 
+   AVG["SEP_Pressure"]=AVG1.mean()           
+   AVG["SEP_Temperature"]=AVG2.mean()           
+   AVG["FLP"]=AVG3.mean()           
+   AVG["FLT"]=AVG4.mean()          
+   AVG["Gas_Rate"]=AVG5.mean()           
+   AVG["Water"]=AVG6.mean()           
+   AVG["Condensate"]=AVG7.mean()           
+   AVG["GOR"]=AVG8.mean()           
+   AVG["API"]=AVG9.mean()           
+   AVG["BS&W"]=AVG10.mean()
    
 
               
@@ -145,6 +145,6 @@ if st.button('Show Results'):
   st.write(Remarks)
   st.markdown(" <center>  <h1> Well Testing Average Results </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
-          
+   st.write(AVG)       
   
  
