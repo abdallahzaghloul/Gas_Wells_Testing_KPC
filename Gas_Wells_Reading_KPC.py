@@ -145,6 +145,6 @@ if st.button('Show Results'):
   st.write(Remarks)
   st.markdown(" <center>  <h1> Well Testing Average Results </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
-   st.write(AVG)       
+  st.write(AVG)       
   
  
